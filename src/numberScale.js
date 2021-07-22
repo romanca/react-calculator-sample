@@ -1,18 +1,18 @@
-import React, { Component } from "react";
+import React from "react";
+import "./calculator.css";
 
-class NumberScale extends Component {
-  render() {
-    return (
-      <div>
-        <input
-          type='text'
-          className='calculator-screen z-depth-1'
-          value={this.props.result}
-          disabled={true}
-        />
-      </div>
-    );
-  }
+
+const NumberScale  = ({result}) =>  {
+  return (
+    <div>
+      <input
+        type='text'
+        className='calculator-screen z-depth-1'
+        value={result}
+        disabled={true}
+      />
+    </div>
+  );
 }
 
 export default NumberScale;

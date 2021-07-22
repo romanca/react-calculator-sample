@@ -1,33 +1,39 @@
-import React, { Component } from "react";
+import React  from "react";
 import "./calculator.css";
+import { numbers } from "./mockData";
 
-class NumberTable extends Component {
-  onPressed = (e) => {
-    this.props.onPressed(e.target.value);
-  };
-
-  render() {
+const  NumberTable  = ({onPressed}) => {
+  
     return (
       <div className='calculator-keys'>
-        <button
+        {
+          Object.values(numbers).map(i =>  <button
+            value={i.title}
+            type='button'
+            className='operator btn btn-info'
+            onClick={(e) => onPressed(e.target.value)}>
+            {i.title}
+          </button> )
+        }
+        {/* <button
           value='1'
           type='button'
           className='operator btn btn-info'
-          onClick={this.onPressed}>
+          onClick={(e) => onPressed(e.target.value)}>
           1
         </button>
         <button
           value='2'
           type='button'
           className='operator btn btn-info'
-          onClick={this.onPressed}>
+          onClick={(e) => onPressed(e.target.value)}>
           2
         </button>
         <button
           value='3'
           type='button'
           className='operator btn btn-info'
-          onClick={this.onPressed}>
+          onClick={(e) => onPressed(e.target.value)}>
           3
         </button>
         <button
@@ -148,9 +154,9 @@ class NumberTable extends Component {
           className='operator btn btn-danger'
           onClick={this.onPressed}>
           B
-        </button>
+        </button> */}
       </div>
     );
-  }
+ 
 }
 export default NumberTable;

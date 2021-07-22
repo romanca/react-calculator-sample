@@ -3,54 +3,52 @@ import NumberScale from "./numberScale";
 import NumberTable from "./numberTable";
 import "./calculator.css";
 
-export default class App extends Component {
-  state = {
-    result: ""
-  };
+const App = () =>  {
+  const [result, setResult] = React.useState("")
 
-  onPressed = (value) => {
+  
+  const onPressed = (value) => {
     if (value === "=") {
-      this.calculate();
-    } else if (value === "C") {
-      this.reset();
-    } else if (value === "B") {
-      this.backSpace();
-    } else if (value) {
-      this.setState({
-        result: this.state.result + value
-      });
+      calculate();
+    } else if (value === "c") {
+       reset();
+    } else if (value === "b") {
+      backSpace();
+    } else if (value ==="") 
+    {
+      setResult("0");
+   } 
+    else if (value) {
+      setResult(result + value);
     }
   };
 
-  calculate = () => {
+  
+
+  const calculate = () => {
     try {
-      this.setState({
-        result: eval(this.state.result)
-      });
+      setResult(eval( result));
     } catch (e) {
-      this.setState({
-        result: "error"
-      });
+      setResult("error");
     }
   };
-  reset = () => {
-    this.setState({
-      result: ""
-    });
+
+  const reset = () => {
+    setResult("");
   };
 
-  backSpace = () => {
-    this.setState({
-      result: this.state.result.slice(0, -1)
-    });
+  const backSpace = () => {
+    setResult(result.slice(0, -1));
   };
 
-  render() {
+ 
     return (
       <div className='calculator card'>
-        <NumberScale result={this.state.result} />
-        <NumberTable text='0' onPressed={this.onPressed} />
+        <NumberScale result={result} />
+        <NumberTable   onPressed={onPressed} />
       </div>
     );
-  }
+
 }
+
+export default App
