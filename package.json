@@ -2,7 +2,7 @@
   "name": "pokus",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://romanca.github.io/React-simple-calculator/",
+  "homepage": "https://romanca.github.io/react-calculator-sample/",
   "dependencies": {
     "@material-ui/core": "^4.4.0",
     "@material-ui/icons": "^4.2.1",
