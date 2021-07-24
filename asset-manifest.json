@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/React-simple-calculator/static/css/main.2469d77b.chunk.css",
-    "main.js": "/React-simple-calculator/static/js/main.fd752476.chunk.js",
-    "main.js.map": "/React-simple-calculator/static/js/main.fd752476.chunk.js.map",
-    "runtime~main.js": "/React-simple-calculator/static/js/runtime~main.3d068aa2.js",
-    "runtime~main.js.map": "/React-simple-calculator/static/js/runtime~main.3d068aa2.js.map",
-    "static/js/2.8846cfc3.chunk.js": "/React-simple-calculator/static/js/2.8846cfc3.chunk.js",
-    "static/js/2.8846cfc3.chunk.js.map": "/React-simple-calculator/static/js/2.8846cfc3.chunk.js.map",
-    "index.html": "/React-simple-calculator/index.html",
-    "precache-manifest.71bfbd3344ac1975c0922494bf4a70ff.js": "/React-simple-calculator/precache-manifest.71bfbd3344ac1975c0922494bf4a70ff.js",
-    "service-worker.js": "/React-simple-calculator/service-worker.js",
-    "static/css/main.2469d77b.chunk.css.map": "/React-simple-calculator/static/css/main.2469d77b.chunk.css.map"
+    "main.css": "/react-calculator-sample/static/css/main.2469d77b.chunk.css",
+    "main.js": "/react-calculator-sample/static/js/main.c500b166.chunk.js",
+    "main.js.map": "/react-calculator-sample/static/js/main.c500b166.chunk.js.map",
+    "runtime~main.js": "/react-calculator-sample/static/js/runtime~main.2ea770b6.js",
+    "runtime~main.js.map": "/react-calculator-sample/static/js/runtime~main.2ea770b6.js.map",
+    "static/js/2.8846cfc3.chunk.js": "/react-calculator-sample/static/js/2.8846cfc3.chunk.js",
+    "static/js/2.8846cfc3.chunk.js.map": "/react-calculator-sample/static/js/2.8846cfc3.chunk.js.map",
+    "index.html": "/react-calculator-sample/index.html",
+    "precache-manifest.0abcf992d01430ef37fe25433112c139.js": "/react-calculator-sample/precache-manifest.0abcf992d01430ef37fe25433112c139.js",
+    "service-worker.js": "/react-calculator-sample/service-worker.js",
+    "static/css/main.2469d77b.chunk.css.map": "/react-calculator-sample/static/css/main.2469d77b.chunk.css.map"
   }
 }
